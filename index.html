@@ -3,40 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Book Generator</title>
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI Books Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter the Name of the author" autofocus required autocomplete="off" class="instructions"/>
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="author">
-        Hamlet by:<br />
-        <em> William Shakespeare</em>
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Rooh123" target="_blank">Roohafza Abubakr</a>
-      is open-sourced on Github<a
-        href="https://github.com/Rooh123/Book-generator"
-        target="_blank"
-      >
-        Github
-      </a>
-      hosted on
-      <a
-        href="https://vercel.com/rooh123s-projects/book-generator"
-        target="_blank"
-        >vercel</a
-      >
-    </footer>
+      <header>
+        <h1>AI Books Generator</h1>
+      </header>
+      <main>
+        <form id="book-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the Name of the author"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="book" id="book"></div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Rooh123" target="_blank"
+          >Roohafza Abubakr</a
+        >
+        is open-sourced on Github<a
+          href="https://github.com/Rooh123/Book-generator"
+          target="_blank"
+        >
+          Github
+        </a>
+        hosted on
+        <a
+          href="https://vercel.com/rooh123s-projects/book-generator"
+          target="_blank"
+          >vercel</a
+        >
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
