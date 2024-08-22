@@ -22,9 +22,7 @@ function generateBook(event) {
   bookElement.classList.remove("hidden");
   bookElement.innerHTML=`<div class="generating"> ⏳Generating Books written by ${userInput.value}.....</div>`;
   axios.get(apiUrl).then(displayBook);
-  console.log("Generating book....");
- console.log(`prompt${prompt}`);
- console.log(`context${context}`);
+  
 }
 
 let bookForm = document.querySelector("#book-generator-form");
