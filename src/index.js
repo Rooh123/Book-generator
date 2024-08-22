@@ -15,7 +15,7 @@ function generateBook(event) {
 
 
   let apiKey = "974569437050o2aa8t3b74db826af365";
-  let context = "you are a bibliophile who reads fiction books. your mission is to write the names of all the books, along with a short famouse sentense of that book in basci html. make sure to consider the user input";
+  let context = "you are a bibliophile who reads fiction books. your mission is to write the names of all the books, along with a short famouse sentense of that book considering basic html structures. make sure to consider the user input";
   let prompt = `user input is: generate, books are written by${userInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let bookElement = document.querySelector("#book");
